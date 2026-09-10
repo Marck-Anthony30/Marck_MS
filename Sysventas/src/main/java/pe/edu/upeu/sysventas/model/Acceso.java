@@ -6,9 +6,10 @@ import pe.edu.upeu.sysventas.enums.TipoTab;
 
 @Data
 public class Acceso {
-    String IDAcceso;
+    String idAcceso;
     String urlAcceso;
     String menuItemNombre;
     Menus menuNombre;
-    TipoTab nombreTap;
+    TipoTab nombreTab;
+
 }

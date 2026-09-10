@@ -3,10 +3,10 @@ package pe.edu.upeu.sysventas.model;
 import lombok.Getter;
 import lombok.Setter;
 import pe.edu.upeu.sysventas.enums.TipoDocumento;
-@Setter
 @Getter
+@Setter
 public class Cliente {
-    String dniRuc;
+    String dniruc;
     String nombres;
     String repLegal;
     String direccion;

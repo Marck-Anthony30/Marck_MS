@@ -4,9 +4,9 @@ import lombok.Getter;
 
 @Getter
 public enum TipoProducto {
-    PRODUCTO("PRODUCTO"),
-    PREPARADO("PREPARADO"),
-    SERVICIO("SERVICIO");
+    PRODUCTO("Producto"),
+    PREPARADO("Preparado"),
+    SERVICIO("Servicio");
 
     String descripcion;
     TipoProducto(String descripcion){

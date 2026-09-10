@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pe.edu.upeu</groupId>
-    <artifactId>Sysventas</artifactId>
+    <artifactId>SysVentas</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Sysventas</name>
+    <name>SysVentas</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,17 +30,7 @@
             <artifactId>controlsfx</artifactId>
             <version>11.2.1</version>
         </dependency>
-        <dependency>
-            <groupId>com.dlsc.formsfx</groupId>
-            <artifactId>formsfx-core</artifactId>
-            <version>11.6.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -74,14 +64,14 @@
             <artifactId>jakarta.validation-api</artifactId>
             <version>3.0.2</version>
         </dependency>
-    </dependencies>
-    <!-- Source: https://mvnrepository.com/artifact/org.glassfish.expressly/expressly -->
-    <dependency>
-        <groupId>org.glassfish.expressly</groupId>
-        <artifactId>expressly</artifactId>
-        <version>5.0.0</version>
+        <!-- Source: https://mvnrepository.com/artifact/org.glassfish.expressly/expressly -->
+        <dependency>
+            <groupId>org.glassfish.expressly</groupId>
+            <artifactId>expressly</artifactId>
+            <version>5.0.0</version>
+        </dependency>
 
-    </dependency>
+    </dependencies>
 
     <build>
         <plugins>

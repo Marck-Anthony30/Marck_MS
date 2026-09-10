@@ -3,9 +3,10 @@ package pe.edu.upeu.sysventas.model;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 public class UnidMedida {
-    Long Idunidad;
+    Long idUnidad;
     String nombreMedida;
+
 }

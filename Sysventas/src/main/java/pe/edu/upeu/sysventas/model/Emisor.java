@@ -5,17 +5,14 @@ import lombok.Setter;
 
 @Getter
 @Setter
-
 public class Emisor {
     Long idEmisor;
-    String rue;
+    String ruc;
     String nombreComercial;
     String ubigeo;
-    String DOMICILIOfIScal;
+    String domicilioFiscal;
     String urbanizacion;
-    String departmento;
+    String departamento;
     String provincia;
-    String DISTRITO;
-
-
+    String distrito;
 }
