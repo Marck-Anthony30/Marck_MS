@@ -1,93 +1,185 @@
-/* =========================
-   BOTON BASE (btn)
-   ========================= */
+/* =========================================================
+   ESTILO GENERAL - SISTEMA DE VENTAS
+   ========================================================= */
 
-.btn {
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
-    -fx-padding: 8 16 8 16;
-    -fx-border-radius: 4;
-    -fx-background-radius: 4;
-    -fx-cursor: hand;
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: linear-gradient(
+            to bottom right,
+            #0F172A,
+            #1E3A5F,
+            #2563EB
+    );
 }
 
-/* =========================
-   PRIMARY
-   ========================= */
+/* =========================================================
+   TEXTO PRINCIPAL
+   ========================================================= */
+
+#welcomeText {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   BOTONES BASE
+   ========================================================= */
+
+.btn {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0, 0, 0, 0.25),
+            8,
+            0.2,
+            0,
+            3
+    );
+}
+
+/* =========================================================
+   PRIMARY - AZUL
+   ========================================================= */
 
 .btn-primary {
-    -fx-background-color: #0d6efd;
+    -fx-background-color: #2563EB;
     -fx-text-fill: white;
 }
 
 .btn-primary:hover {
-    -fx-background-color: #0b5ed7;
+    -fx-background-color: #3B82F6;
 }
 
 .btn-primary:pressed {
-    -fx-background-color: #0a58ca;
+    -fx-background-color: #1D4ED8;
 }
 
-/* =========================
-   SUCCESS
-   ========================= */
+/* =========================================================
+   SUCCESS - VERDE
+   ========================================================= */
 
 .btn-success {
-    -fx-background-color: #198754;
+    -fx-background-color: #10B981;
     -fx-text-fill: white;
 }
 
 .btn-success:hover {
-    -fx-background-color: #157347;
+    -fx-background-color: #34D399;
 }
 
 .btn-success:pressed {
-    -fx-background-color: #146c43;
+    -fx-background-color: #059669;
 }
 
-/* =========================
-   DANGER
-   ========================= */
+/* =========================================================
+   DANGER - ROJO
+   ========================================================= */
 
 .btn-danger {
-    -fx-background-color: #dc3545;
+    -fx-background-color: #EF4444;
     -fx-text-fill: white;
 }
 
 .btn-danger:hover {
-    -fx-background-color: #bb2d3b;
+    -fx-background-color: #F87171;
 }
 
 .btn-danger:pressed {
-    -fx-background-color: #b02a37;
+    -fx-background-color: #DC2626;
 }
 
-/* =========================
-   WARNING
-   ========================= */
+/* =========================================================
+   WARNING - DORADO
+   ========================================================= */
 
 .btn-warning {
-    -fx-background-color: #ffc107;
-    -fx-text-fill: black;
+    -fx-background-color: #F59E0B;
+    -fx-text-fill: white;
 }
 
 .btn-warning:hover {
-    -fx-background-color: #ffca2c;
+    -fx-background-color: #FBBF24;
 }
 
 .btn-warning:pressed {
-    -fx-background-color: #ffcd39;
+    -fx-background-color: #D97706;
 }
 
-.root {
-    -fx-font-family: "Segoe UI", Arial, sans-serif;
-    -fx-background-color: #a6ccf3;
+/* =========================================================
+   BOTÓN INFO - TURQUESA
+   ========================================================= */
+
+.btn-info {
+    -fx-background-color: #06B6D4;
+    -fx-text-fill: white;
 }
 
-#welcomeText {
-    -fx-text-fill: #91f458;
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
+.btn-info:hover {
+    -fx-background-color: #22D3EE;
 }
 
+.btn-info:pressed {
+    -fx-background-color: #0891B2;
+}
+
+/* =========================================================
+   BOTÓN SECUNDARIO
+   ========================================================= */
+
+.btn-secondary {
+    -fx-background-color: #475569;
+    -fx-text-fill: white;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #64748B;
+}
+
+.btn-secondary:pressed {
+    -fx-background-color: #334155;
+}
+
+/* =========================================================
+   BOTÓN OSCURO
+   ========================================================= */
+
+.btn-dark {
+    -fx-background-color: #0F172A;
+    -fx-text-fill: white;
+}
+
+.btn-dark:hover {
+    -fx-background-color: #1E293B;
+}
+
+.btn-dark:pressed {
+    -fx-background-color: #020617;
+}
+
+/* =========================================================
+   BOTÓN CLARO
+   ========================================================= */
+
+.btn-light {
+    -fx-background-color: #F8FAFC;
+    -fx-text-fill: #0F172A;
+}
+
+.btn-light:hover {
+    -fx-background-color: #E2E8F0;
+}
+
+.btn-light:pressed {
+    -fx-background-color: #CBD5E1;
+}
 
