@@ -2,7 +2,7 @@ package pe.edu.upeu.sysventas.repository;
 
 import pe.edu.upeu.sysventas.model.Producto;
 
-public class ProductoRepository extends AbstracJpaRepository<Producto,Long>{
+public class ProductoRepository extends AbstractJpaRepository<Producto, Long>{
     private long sequence=1;
     @Override
     protected Long getId(Producto entity) {
@@ -12,11 +12,10 @@ public class ProductoRepository extends AbstracJpaRepository<Producto,Long>{
     @Override
     protected void setId(Producto entity, Long id) {
         entity.setIdProducto(id);
-
     }
 
     @Override
-    protected Long generateid() {
+    protected Long generateId() {
         return sequence++;
     }
 }

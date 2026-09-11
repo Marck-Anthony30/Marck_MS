@@ -2,7 +2,7 @@ package pe.edu.upeu.sysventas.repository;
 
 import pe.edu.upeu.sysventas.model.Categoria;
 
-public class CategoriaRepository extends AbstracJpaRepository<Categoria, Long>{
+public class CategoriaRepository extends AbstractJpaRepository<Categoria, Long>{
     private long sequence=1;
 
     @Override
@@ -16,7 +16,7 @@ public class CategoriaRepository extends AbstracJpaRepository<Categoria, Long>{
     }
 
     @Override
-    protected Long generateid() {
+    protected Long generateId() {
         return sequence++;
     }
 }

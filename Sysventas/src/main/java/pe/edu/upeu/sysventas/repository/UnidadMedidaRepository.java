@@ -2,8 +2,9 @@ package pe.edu.upeu.sysventas.repository;
 
 import pe.edu.upeu.sysventas.model.UnidMedida;
 
-public class UnidMedidaRepository extends AbstracJpaRepository<UnidMedida,Long>{
-    private long sequence=1;
+public class UnidadMedidaRepository extends AbstractJpaRepository<UnidMedida, Long> {
+    private long sequence = 1;
+
     @Override
     protected Long getId(UnidMedida entity) {
         return entity.getIdUnidad();
@@ -12,11 +13,10 @@ public class UnidMedidaRepository extends AbstracJpaRepository<UnidMedida,Long>{
     @Override
     protected void setId(UnidMedida entity, Long id) {
         entity.setIdUnidad(id);
-
     }
 
     @Override
-    protected Long generateid() {
+    protected Long generateId() {
         return sequence++;
     }
 }
