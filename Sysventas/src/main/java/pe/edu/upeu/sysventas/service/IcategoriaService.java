@@ -2,5 +2,6 @@ package pe.edu.upeu.sysventas.service;
 
 import pe.edu.upeu.sysventas.model.Categoria;
 
-public interface IcategoriaService extends IcrudGenericoService<Categoria, Long> {
+public interface ICategoriaService extends ICrudGenericoService<Categoria, Long>{
+
 }
